@@ -8,19 +8,19 @@
 </head>
 <body>
 <div class="intro">
-    <h3>hhhhahahhaha</h3>
     <h1>Minesweeper</h1>
     <h2>Remember that game you tried to play as a kid? Well, you can relive your childhood by playing it here!</h2>
     <div class="box">
-    <div class="table" id="table"></div>
+    <div class="table" id="frame"></div>
     <br>
-    <div class="game over" id="game" style="display: none;">
+    <div class="game over" id="lost" style="display: none;">
         <h3>BOOM!!!</h3>
-        <button class="restart" id="restart" onclick="reload()"></button>
     </div>
     <div class="win" id="win" style="display: none;">
         <h3>Congratulations! You Win!!!!</h3>
-        <button class="restart" id="restart" onclick="reload()"></button>
+    </div>
+    <div class="restart" id="restart-button">
+        <button class="restart" id="reload" onclick="reload()">Restart</button>
     </div>
     </div>
 </div>

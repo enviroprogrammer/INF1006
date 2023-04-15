@@ -6,13 +6,13 @@ const component = {
     bombs : 10,
     ingame : true,
     bombs_place : [],
+    bomb : '💣',
     flags: 0,
     colors : {1: 'red', 2: 'orange', 3: 'yellow', 4: 'green', 5: 'indigo', 6: 'blue', 7: 'purple', 8: 'grey'}
 }
-
 // Game start
 function start() {
-    genarateBombsIndex();
+    generateBombsIndex();
     document.getElementById("frame").appendChild(createTable());
 }
 
@@ -23,61 +23,63 @@ function randomIntFromInterval(max, min) {
 
 
 // Randomly generate bombs that lie within index 1 - 81
-function genarateBombsIndex() {
-    let i = 0;
+function generateBombsIndex() {
     let index;
 
-    for (i; i < component.bombs; i++) {
-        while (1) {
-            index = randomIntFromInterval(1, component.rows * component.cols);
-            if (!bombs_place.include(index)) {
-                booms_place.push(index);
-            }
+    for (let i = 0; i < component.bombs; i++) {
+        index = randomIntFromInterval(1, component.rows * component.cols);
+        if (!component.bombs_place.includes(index)) {
+            component.bombs_place.push(index);
         }
     }
 }
 
 // Generate a 9*9 table and track the id of each cell
 function createTable() {
-    let i, j, row, cell, id;
-    const table = getElementById("table");
-    table.innerHTML = "";
-    for (i = 1; i < component.rows+1; i++) {
+    let table, i, j, row, cell, id;
+    table = document.createElement("table");
+
+    for (i = 0; i < component.rows; i++) {
         row = document.createElement('tr');
-        for (j = 1; i < component.cols+1; i++) {
+        for (j = 0; j < component.cols; j++) {
             cell = document.createElement('td');
             id = i * j;
             cell.id = (id.toString());
-            listen(cell, id, i ,j);
             id++;
             row.appendChild(cell);
+            listen(cell, id, i ,j);
         }
         table.appendChild(row);
     }
+    return table;
 }
 
-// Trigger fucntion by listening to the mouse operation
+// Trigger function by listening to the mouse operation
 function listen(cell, id, i , j) {
     cell.addEventListener("mousedown", function(e) {
         if (e.which === 1) {
             if(!component.ingame || cell.flag) return;
-            if (booms_place.include(id)) {
+            if (component.bombs_place.includes(id)) {
                 //do something to the cell
                 gameOver();
             } else {
                 const bombs = calAdjBombs(i , j);
-                //do somthing to the cell
+                //do something to the cell
             }
             
         }
         // 3 is flagged
         else if (e.which === 3) {
             if (component.flags < component.bombs) {
-                if (!cell.flag) cell.flag = true;
-                else cell.flag = !cell.flag;
+                if (!cell.flag) {
+                    cell.flag = true;
+                }
+                else {
+                    cell.flag = !cell.flag;
+                }
             }
             // check if the number of flags is equal to number of bombs
-            if(component.flags++ === component.bombs) {
+            if(component.flags === component.bombs) {
                 checkAllFlag();
             }
         }
@@ -85,12 +87,25 @@ function listen(cell, id, i , j) {
     })
 }
 
+// This gets called whenever a user clicks on a cell.
+function handleCellClick(cell, i, j) {
+    if (!component.ingame) {
+        return;
+    }
+
+    if (cell.flag) {
+        return;
+    }
+
+    cell.clicked = true;
+}
+
 // Calculate the number of bombs near the cell clicked on 
 function calAdjBombs(row, col) {
     let count = 0;
-    for (i = -1; i<2; i++) {
-        for (j = -1; i<2; i++) {
-            if (row + i > 0 && col + j > 0 && component.bombs_place.includes((rows + i) * (cols + j))) count++;
+    for (let i = -1; i<2; i++) {
+        for (let j = -1; i<2; i++) {
+            if (row + i > 0 && col + j > 0 && component.bombs_place.includes((row + i) * (col + j))) count++;
         }
     }
     return count;
@@ -98,8 +113,8 @@ function calAdjBombs(row, col) {
 
 // Check if all flags are in the right position or not
 function checkAllFlag() {
-    booms_place.array.forEach(cell => {
-        if(!getElementById(cell.toString).flag) return;
+    component.bombs_place.forEach(cell => {
+        if(!document.getElementById(cell.toString()).flag) return;
     });
     win();
 }
@@ -118,8 +133,8 @@ function reload() {
     window.location.reload();
 }
 
-window.addEventListener("onload", function() {
+window.addEventListener("load", function() {
     document.getElementById("lost").style.display="none";
     document.getElementById("win").style.display="none";
-    startGame();
+    start();
 })
