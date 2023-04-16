@@ -56,7 +56,7 @@ Ans: This means you are not setting the flags properly. You are neither win or l
     Student Name: Monica Iqbal \
     ID number: 
 
-* This project has been sponsored by:
+* This project has been sponsored by: \
 University: University of Toronto \
 Faculty: Faculty of information \
 Program: Master of information \
