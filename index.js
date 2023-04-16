@@ -48,7 +48,6 @@ function createTable() {
             cell.id = (id.toString());
             id++;
             row.appendChild(cell);
-            console.log(id)
             listen(cell, id, i ,j);
         }
         table.appendChild(row);
@@ -67,7 +66,6 @@ function listen(cell, id, i , j) {
                 gameOver();
             } else {
                 const bombs = calAdjBombs(i , j);
-                console.log(id)
                 
                 cell.style.background = component.colors[bombs];
                 cell.textContent = bombs;
