@@ -24,15 +24,15 @@ Link: https://github.com/enviroprogrammer/INF1006-minesweeper.git
 3) If players suspect this cell contain a bomb, they can mark this cell by a flag 🚩
 
 * How to Win/Lose:
-1) Win:
-When all empty cells are revealed and all bombs are flagged.
-2) Lose:
+Win: \
+When all empty cells are revealed and all bombs are flagged. \
+Lose: \
 When clicking any of the bombs💣.
 
 * Game Operation:
-1) Right Single Click - show numbers of bombs nearby for this cell
-2) Right Double Clicks - Set flag for this cell
-3) Right Double Clicks for the flag - Cancel the flag setting
+Right Single Click - show numbers of bombs nearby for this cell \
+Right Double Clicks - Set flag for this cell \
+Right Double Clicks for the flag - Cancel the flag setting
 
 # Troubleshooting & FAQ
 * Cannot run the game properly\
