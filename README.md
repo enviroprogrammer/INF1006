@@ -44,7 +44,7 @@ Ans: Make sure all the download documents are under same location
 Ans: That is the normal situation as files need time to operate
 
 * Not showing the result of win/lose when all flags are set\
-Ans: This means you are not setting the flags properly. You are neither win or lose.
+Ans: This means you are not setting the flags properly. You neither win nor lose.
 
 # Maintainers
 * Current maintainers(3): \
