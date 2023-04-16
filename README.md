@@ -25,10 +25,10 @@ Link: https://github.com/enviroprogrammer/INF1006-minesweeper.git
 
 * How to Win/Lose:
 
-Win: \
-When all empty cells are revealed and all bombs are flagged. \
-Lose: \
-When clicking any of the bombs💣.
+    Win: \
+    When all empty cells are revealed and all bombs are flagged. \
+    Lose: \
+    When clicking any of the bombs💣.
 
 * Game Operation:
 Right Single Click - show numbers of bombs nearby for this cell \
