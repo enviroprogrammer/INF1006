@@ -35,13 +35,13 @@ When clicking any of the bombs💣.
 3) Right Double Clicks for the flag - Cancel the flag setting
 
 # Troubleshooting & FAQ
-* Cannot run the game properly
+* Cannot run the game properly\
 Ans: Make sure all the download documents are under same location
 
-* Take time to show numbers in cells
+* Take time to show numbers in cells\
 Ans: That is the normal situation as files need time to operate
 
-* Not show the result of win/lose when all flags are set
+* Not show the result of win/lose when all flags are set\
 Ans: This means you are not setting the flags properly. You are neither win or lose.
 
 # Maintainers
