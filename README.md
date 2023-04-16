@@ -64,7 +64,7 @@ Course code: INF1006 Section 0118 \
 Course name: Creating and Exploring Software Environments with JavaScript and Node.js \
 Instructor name: Matthew Wells
 
-# Update information
+# Update Information
 Created date: Mar.19, 2023 \
 Last Modified date: Apr.16, 2023 
 
