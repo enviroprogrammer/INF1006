@@ -7,8 +7,8 @@ Minesweeper is a logic puzzle game that requires players to discover and set fla
 This project is a simple version of Minesweeper in that players need to find 10 bombs in a 9*9 grid of cells.
 
 # Requirement
-This game requires all 3 files downloaded from the Github link.
-The name of the three files are: 1) index.css 2) index.html 3) index.js 
+This game requires all 3 files downloaded from the Github link. \
+The name of the three files are: 1) index.css 2) index.html 3) index.js \ 
 Link: https://github.com/enviroprogrammer/INF1006-minesweeper.git
 
 # How to Run & Game Rules
@@ -29,7 +29,7 @@ Link: https://github.com/enviroprogrammer/INF1006-minesweeper.git
     Lose: \
     When clicking any of the bombs💣.
 
-* Game Operation:
+* Game Operation: \
 Right Single Click - show numbers of bombs nearby for this cell \
 Right Double Clicks - Set flag for this cell \
 Right Double Clicks for the flag - Cancel the flag setting
