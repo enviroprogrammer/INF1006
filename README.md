@@ -30,9 +30,9 @@ When all empty cells are revealed and all bombs are flagged.
 When clicking any of the bombs💣.
 
 * Game Operation:
-Right Single Click - show numbers of bombs nearby for this cell
-Right Double Clicks - Set flag for this cell
-Right Double Clicks for the flag - Cancel the flag setting
+1) Right Single Click - show numbers of bombs nearby for this cell
+2) Right Double Clicks - Set flag for this cell
+3) Right Double Clicks for the flag - Cancel the flag setting
 
 # Troubleshooting & FAQ
 * Cannot run the game properly
