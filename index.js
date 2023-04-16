@@ -7,7 +7,7 @@ const component = {
     ingame : true,
     bombs_place : [],
     bomb : '💣',
-    flag : 'f',
+    flag : '🚩',
     flags: 0,
     cell_reveal: 0,
     colors : {1: 'white', 2: 'orange', 3: 'yellow', 4: 'green', 5: 'indigo', 6: 'blue', 7: 'purple', 8: 'grey'}
