@@ -9,7 +9,7 @@ This project is a simple version of Minesweeper in that players need to find 10 
 # Requirement
 This game requires all 3 files downloaded from the Github link. \
 The name of the three files are: 1) index.css 2) index.html 3) index.js
- 
+
 Link: https://github.com/enviroprogrammer/INF1006-minesweeper.git
 
 # How to Run & Game Rules
@@ -65,8 +65,8 @@ Course name: Creating and Exploring Software Environments with JavaScript and No
 Instructor name: Matthew Wells
 
 # Update information
-Created date: Mar.19,2023 \
-Last Modified date: Apr.16,2023 
+Created date: Mar.19, 2023 \
+Last Modified date: Apr.16, 2023 
 
 # Template from:
 https://www.drupal.org/docs/develop/managing-a-drupalorg-theme-module-or-distribution-project/documenting-your-project/readme-template
