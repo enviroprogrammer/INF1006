@@ -45,27 +45,27 @@ Ans: That is the normal situation as files need time to operate
 Ans: This means you are not setting the flags properly. You are neither win or lose.
 
 # Maintainers
-* Current maintainers(3):
-Student Name: Yijun Lin
-ID number: 1003404620
+* Current maintainers(3): \
+Student Name: Yijun Lin \
+ID number: 1003404620 \
 
-Student Name: Si Cheng
-ID number: 1003834158
+Student Name: Si Cheng \
+ID number: 1003834158 \
 
-Student Name: Monica Iqbal
+Student Name: Monica Iqbal \
 ID number: 
 
 * This project has been sponsored by:
-University: University of Toronto
-Faculty: Faculty of information
-Program: Master of information
-Course code: INF1006 Section 0118
-Course name: Creating and Exploring Software Environments with JavaScript and Node.js
+University: University of Toronto \
+Faculty: Faculty of information \
+Program: Master of information \
+Course code: INF1006 Section 0118 \
+Course name: Creating and Exploring Software Environments with JavaScript and Node.js \
 Instructor name: Matthew Wells
 
 # Update information
-Created date: Mar.19,2023
-Last Modified date: Apr.16,2023
+Created date: Mar.19,2023 \
+Last Modified date: Apr.16,2023 
 
 # Template from:
 https://www.drupal.org/docs/develop/managing-a-drupalorg-theme-module-or-distribution-project/documenting-your-project/readme-template
