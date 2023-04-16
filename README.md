@@ -24,6 +24,7 @@ Link: https://github.com/enviroprogrammer/INF1006-minesweeper.git
 3) If players suspect this cell contain a bomb, they can mark this cell by a flag 🚩
 
 * How to Win/Lose:
+
 Win: \
 When all empty cells are revealed and all bombs are flagged. \
 Lose: \
