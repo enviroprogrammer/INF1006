@@ -23,8 +23,7 @@ Link: https://github.com/enviroprogrammer/INF1006-minesweeper.git
 2) 0 means there are no bombs in the nearly eight adjacent cells which are similar functions as space in other Minesweeper games. Numbers are used as clues to help players to avoid the detonating of bombs.
 3) If players suspect this cell contain a bomb, they can mark this cell by a flag 🚩
 
-* How to Win/Lose:
-
+* How to Win/Lose: \
     Win: \
     When all empty cells are revealed and all bombs are flagged. \
     Lose: \
