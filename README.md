@@ -47,10 +47,10 @@ Ans: This means you are not setting the flags properly. You are neither win or l
 # Maintainers
 * Current maintainers(3): \
 Student Name: Yijun Lin \
-ID number: 1003404620 \
+ID number: 1003404620 
 
 Student Name: Si Cheng \
-ID number: 1003834158 \
+ID number: 1003834158 
 
 Student Name: Monica Iqbal \
 ID number: 
