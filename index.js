@@ -27,7 +27,7 @@ function randomIntFromInterval(max, min) {
 function generateBombsIndex() {
     let index;
 
-    for (let i = 0; i < component.bombs; i++) {
+    for (let i = 1; i < component.bombs + 1; i++) {
         index = randomIntFromInterval(1, component.rows * component.cols);
         if (!component.bombs_place.includes(index)) {
             component.bombs_place.push(index);
@@ -40,15 +40,15 @@ function createTable() {
     let table, i, j, row, cell, id;
     table = document.createElement("table");
 
-    for (i = 0; i < component.rows; i++) {
+    for (i = 1; i < component.rows + 1; i++) {
         row = document.createElement('tr');
-        for (j = 0; j < component.cols; j++) {
+        for (j = 1; j < component.cols + 1; j++) {
             cell = document.createElement('td');
             id = i * j;
             cell.id = (id.toString());
-            id++;
             row.appendChild(cell);
             listen(cell, id, i ,j);
+            id++
         }
         table.appendChild(row);
     }
@@ -66,7 +66,6 @@ function listen(cell, id, i , j) {
                 gameOver();
             } else {
                 const bombs = calAdjBombs(i , j);
-                
                 cell.style.background = component.colors[bombs];
                 cell.textContent = bombs;
 
@@ -111,8 +110,8 @@ function handleCellClick(cell, i, j) {
 function calAdjBombs(row, col) {
     let count = 0;
     for (let i = -1; i<2; i++) {
-        for (let j = -1; i<2; i++) {
-            if (row + i > 0 && col + j > 0 && component.bombs_place.includes((row + i) * (col + j))) count++;
+        for (let j = -1; j<2; j++) {
+            if (component.bombs_place.includes((row + i) * (col + j))) count++;
         }
     }
     return count;
