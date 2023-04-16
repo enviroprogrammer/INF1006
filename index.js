@@ -7,6 +7,7 @@ const component = {
     ingame : true,
     bombs_place : [],
     bomb : '💣',
+    flag : 'f',
     flags: 0,
     colors : {1: 'red', 2: 'orange', 3: 'yellow', 4: 'green', 5: 'indigo', 6: 'blue', 7: 'purple', 8: 'grey'}
 }
@@ -47,6 +48,7 @@ function createTable() {
             cell.id = (id.toString());
             id++;
             row.appendChild(cell);
+            console.log(id)
             listen(cell, id, i ,j);
         }
         table.appendChild(row);
@@ -60,11 +62,16 @@ function listen(cell, id, i , j) {
         if (e.which === 1) {
             if(!component.ingame || cell.flag) return;
             if (component.bombs_place.includes(id)) {
-                //do something to the cell
+                cell.style.background = "red";
+                cell.textContent = component.bomb;
                 gameOver();
             } else {
                 const bombs = calAdjBombs(i , j);
-                //do something to the cell
+                console.log(id)
+                
+                cell.style.background = component.colors[bombs];
+                cell.textContent = bombs;
+
             }
             
         }
@@ -73,9 +80,11 @@ function listen(cell, id, i , j) {
             if (component.flags < component.bombs) {
                 if (!cell.flag) {
                     cell.flag = true;
+                    cell.textContent = component.flag;
                 }
                 else {
                     cell.flag = !cell.flag;
+                    cell.textContent = null;
                 }
             }
             // check if the number of flags is equal to number of bombs
