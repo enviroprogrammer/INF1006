@@ -1,5 +1,5 @@
 # INF1006 Assignment: Minesweeper
-By Luna, Claire, and Monica
+By Yijun Lin, Si Cheng, and Monica Iqbal
 
 # Introduction
 Minesweeper is a logic puzzle game that requires players to discover and set flags for hidden bombs without detonating any of them. 
