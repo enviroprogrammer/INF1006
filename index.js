@@ -131,10 +131,16 @@ function calAdjBombs(id, row, col) {
 
 // Check if all flags are in the right position or not
 function checkAllFlag() {
-    component.bombs_place.forEach(cell => {
-        if(!document.getElementById(cell.toString()).flag) return;
-    });
-    win();
+    let count = booms_place.array.forEach((count, cell) => {
+        if (document.getElementById(cell.toString()).flag) {
+            return count++;
+        } else {
+            return count;
+        }
+    }, 0);
+    if (count === component.flags) {
+        win();
+    }
 }
 
 function gameOver() {
